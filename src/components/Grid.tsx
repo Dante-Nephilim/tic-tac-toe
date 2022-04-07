@@ -1,15 +1,6 @@
 import { useEffect, useState } from "react";
 import Box from './box';
 
-
-
-
-
-
-
-
-
-
 export default function Grid() {
     const [box, boxSet] = useState(Array(9).fill(null));
     const [player, playerSet] = useState<'X' | 'O'>(
@@ -78,8 +69,8 @@ export default function Grid() {
             </div>
         </div>
 
-        <div><h1>winner is {winner}</h1></div>
-        {winner && <button onClick={Reset}>Reset</button>}
+        { }
+        {winner && <><div className="winnerDeclaration"><h1>winner is {winner}</h1><button onClick={Reset}>Reset</button></div></>}
     </>
     );
 }
